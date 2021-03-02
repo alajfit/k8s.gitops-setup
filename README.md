@@ -12,4 +12,7 @@
    kubectl create namespace argocd
    helm --namespace argocd --set server.extraArgs="{--insecure}" template . | kubectl apply -n argocd -f -
    ```
-3. Pull this repo
+3. Pull this repo update the templates and run the following command
+   ```sh
+   kubectl apply -n argocd -f bootstrap
+   ```
