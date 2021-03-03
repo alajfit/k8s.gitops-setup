@@ -1,4 +1,4 @@
-# K8s Cluster on Digital Ocean
+# K8s Cluster setup Digital Ocean
 
 ## Steps to setup K8s
 
