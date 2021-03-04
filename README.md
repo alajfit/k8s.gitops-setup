@@ -1,5 +1,7 @@
 # K8s Cluster setup Digital Ocean
 
+## Folder Structure
+
 ## Steps to setup K8s
 
 1. Create Cluster on Digital Ocean
