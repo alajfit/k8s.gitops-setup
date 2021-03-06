@@ -1,0 +1,18 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: argocd
+spec:
+  clusterResourceWhiteList:
+    - group: '*'
+      kind: '*'
+  destination:
+    - namespace: '*'
+      server: '*'
+  sourceRepos:
+    - https://github.com/alajfit/k8s.gitops-setup.git
+  destinations:
+    - server: https://kubernetes.default.svc
+      namespace: argocd
+  description: 'Applications for ArgoCD'

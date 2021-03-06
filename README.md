@@ -2,6 +2,8 @@
 
 ## Folder Structure
 
+- bootstrap (Seed of ArgoCD for the Cluster)
+
 ## Steps to setup K8s
 
 1. Create Cluster on Digital Ocean
