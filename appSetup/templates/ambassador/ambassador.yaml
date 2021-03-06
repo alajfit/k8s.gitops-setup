@@ -1,0 +1,18 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ambassador
+spec:
+  project: ambassador
+  source:
+    repoURL: https://getambassador.io
+    chart: ambassador
+    targetRevision: 6.4.2
+    helm:
+      parameters:
+        - name: replicaCount
+          value: '1'
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: ambassador

@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:  
+  name: argocd-routes
+  annotations:
+    getambassador.io/config: |
+      apiVersion: ambassador/v1
+      kind: Mapping
+      name: argocd
+      host: argocd.gikken.com
+      use_websocket: true
+      prefix: /
+      service: http://release-argocd-server.argocd
+spec:
+  ports:  
+  - port: 80

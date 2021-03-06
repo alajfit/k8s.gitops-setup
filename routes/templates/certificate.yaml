@@ -1,0 +1,33 @@
+---
+apiVersion: getambassador.io/v2
+kind: Host
+metadata:
+  name: gikken
+spec:
+  hostname: gikken.com
+  acmeProvider:
+    email: alajfit@gmail.com
+  tlsSecret:
+    name: gikken-certs
+---
+apiVersion: getambassador.io/v2
+kind: Host
+metadata:
+  name: argocd.gikken
+spec:
+  hostname: argocd.gikken.com
+  acmeProvider:
+    email: alajfit@gmail.com
+  tlsSecret:
+    name: argocd-certs
+---
+apiVersion: getambassador.io/v2
+kind: Host
+metadata:
+  name: ops-view.gikken
+spec:
+  hostname: ops-view.gikken.com
+  acmeProvider:
+    email: alajfit@gmail.com
+  tlsSecret:
+    name: ops-view-certs
