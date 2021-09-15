@@ -1,4 +1,4 @@
-# K8s Cluster setup Digital Ocean
+# Kubernetes Cluster setup Digital Ocean
 
 ## Folder Structure
 
